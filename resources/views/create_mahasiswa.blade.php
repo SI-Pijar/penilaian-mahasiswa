@@ -8,7 +8,7 @@
                 <h1 class="h4 judul-halaman mb-4"><i class="bi bi-person-plus-fill text-primary me-2"></i>Tambah Mahasiswa</h1>
 
                 <form action="{{ route('mahasiswa.store') }}" method="POST">
-                    @csrf
+ @csrf
 
                     <div class="mb-3">
                         <label for="npm" class="form-label">NPM</label>
