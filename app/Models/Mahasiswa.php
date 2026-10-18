@@ -47,7 +47,7 @@ class Mahasiswa extends Model
         return $this->join('kelas', 'kelas.id', '=', 'mahasiswa.kelas_id')
             ->select('mahasiswa.*', 'kelas.nama_kelas as nama_kelas')
             ->orderBy('mahasiswa.npm')
-            ->get();
+ ->get();
     }
 
     public function hitungIpk($mahasiswaId)
