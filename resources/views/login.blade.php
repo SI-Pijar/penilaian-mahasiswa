@@ -8,7 +8,6 @@
             <h1 class="h4 fw-bold mb-1">Penilaian Mahasiswa</h1>
             <p class="text-muted mb-0">Masuk untuk melanjutkan</p>
         </div>
-
         <form action="{{ route('login.proses') }}" method="POST">
             @csrf
 
@@ -19,7 +18,6 @@
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
-
             <div class="mb-3">
                 <label for="password" class="form-label">Kata Sandi</label>
                 <input type="password" class="form-control @error('password') is-invalid @enderror" id="password" name="password" placeholder="Masukkan kata sandi">
@@ -27,7 +25,6 @@
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
-
             <div class="form-check mb-4">
                 <input class="form-check-input" type="checkbox" id="ingat" name="ingat" value="1">
                 <label class="form-check-label" for="ingat">Ingat saya</label>
@@ -37,10 +34,9 @@
                 <i class="bi bi-box-arrow-in-right me-1"></i>Masuk
             </button>
         </form>
-
         <p class="text-center small text-muted mt-4 mb-0">
             Mahasiswa belum punya akun? <a href="{{ route('register') }}">Daftar di sini</a>
         </p>
     </div>
 </div>
-@endsection
+@endsectio
