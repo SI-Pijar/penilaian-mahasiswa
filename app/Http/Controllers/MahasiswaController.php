@@ -20,7 +20,7 @@ class MahasiswaController extends Controller
     public function index()
     {
         $data = [
-            'title' => 'Data Mahasiswa',
+ 'title' => 'Data Mahasiswa',
             'mahasiswa' => $this->mahasiswaModel->getMahasiswa(),
         ];
 
@@ -83,8 +83,7 @@ class MahasiswaController extends Controller
             'kelas_id' => $request->input('kelas_id'),
             'angkatan' => $request->input('angkatan'),
         ]);
-
-        return redirect()->to('/mahasiswa')->with('success', 'Data mahasiswa berhasil diperbarui!');
+  return redirect()->to('/mahasiswa')->with('success', 'Data mahasiswa berhasil diperbarui!');
     }
 
     public function destroy($id)
