@@ -20,7 +20,7 @@
                         <th class="ps-4">No</th>
                         <th>NPM</th>
                         <th>Nama</th>
-                        <th>Kelas</th>
+<th>Kelas</th>
                         <th>Angkatan</th>
                         <th>Akun</th>
                         <th class="text-end pe-4">Aksi</th>
