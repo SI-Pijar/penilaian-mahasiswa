@@ -6,7 +6,7 @@
         <div class="text-center mb-4">
             <div class="logo-auth mb-3"><i class="bi bi-person-plus-fill"></i></div>
             <h1 class="h4 fw-bold mb-1">Daftar Akun Mahasiswa</h1>
-            <p class="text-muted mb-0">Gunakan NPM yang sudah terdaftar di bagian akademik</p>
+  <p class="text-muted mb-0">Gunakan NPM yang sudah terdaftar di bagian akademik</p>
         </div>
 
         <form action="{{ route('register.proses') }}" method="POST">
