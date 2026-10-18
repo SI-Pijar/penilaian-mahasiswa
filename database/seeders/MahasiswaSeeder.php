@@ -1,7 +1,6 @@
 <?php
 
 namespace Database\Seeders;
-
 use App\Models\Kelas;
 use App\Models\Mahasiswa;
 use App\Models\User;
@@ -14,7 +13,6 @@ class MahasiswaSeeder extends Seeder
         $kelasA = Kelas::where('nama_kelas', 'A')->first();
         $kelasB = Kelas::where('nama_kelas', 'B')->first();
         $akunMahasiswa = User::where('email', 'mahasiswa@penilaian.test')->first();
-
         $data = [
             ['2417051001', 'Andi Saputra', $kelasA->id, 2024, $akunMahasiswa->id],
             ['2417051002', 'Bunga Lestari', $kelasA->id, 2024, null],
@@ -22,7 +20,6 @@ class MahasiswaSeeder extends Seeder
             ['2317051004', 'Dimas Prakoso', $kelasB->id, 2023, null],
             ['2317051005', 'Eka Wulandari', $kelasA->id, 2023, null],
         ];
-
         foreach ($data as $item) {
             Mahasiswa::create([
                 'npm' => $item[0],
